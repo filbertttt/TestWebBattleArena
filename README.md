@@ -9,21 +9,32 @@
 git clone https://github.com/bryanricaldi1408-oss/ice_breaker.git
 ```
 
-### 2. Setup Database (PostgreSQL)
-#### a. Create new Database
+### 2. Setup database from terminal
+1. Masuk ke PostgreSQL
+   ```
+   psql -U postgres
+   ```
 
-```bash
-# Masuk ke psql
-psql -U postgres
+ 2. Masukkan password    
+ 3. Buat database baru
+    ```
+    CREATE DATABASE icebreaker;
+    ```
 
-# Di dalam psql, buat database
-CREATE DATABASE icebreaker;
+4. Import file database
+   ```
+   psql -U postgres -d icebreaker -f "path/ke/folder/project/db.sql"
+   ```
 
-# import db.sql
-psql -U postgres -d icebreaker -f "path/to/project/folder/db.sql"
-```
+### 3. Setup database from pgAdmin 4
+1. Buka pgAdmin 4
+2. Login
+3. Klik kanan pada **Databases** --> **Create** --> **Database...**
+4. isi Database name `icebreaker` --> klik `save`
+5. Klik tombol **Open File** → arahkan ke file `db.sql` di folder project
+6. Klik **Execute/Run** untuk menjalankan seluruh isi SQL
 
-### 3. Setup Backend
+### 4. Setup Backend
 
 ```bash
 # Masuk ke folder backend
