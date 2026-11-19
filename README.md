@@ -2,16 +2,15 @@
 
 **IceBreaker** adalah permainan board-game digital berbasis web untuk kegiatan *team building*. Seorang **Host** membuat sesi permainan, lalu **Peserta** bergabung via QR code atau kode ruangan. Tim-tim bergantian melempar dadu, bergerak di papan, dan menyelesaikan tantangan (_challenge_) bertipe **Move**, **Talk**, **Create**, atau **Wildcard**.
 
-## Instalasi & Setup
+## Installation & Setup
 ### 1. Clone Repository
 
 ```bash
-git clone <URL_REPOSITORY>
-cd ice_breaker
+git clone https://github.com/bryanricaldi1408-oss/ice_breaker.git
 ```
 
 ### 2. Setup Database (PostgreSQL)
-#### a. Buat database baru
+#### a. Create new Database
 
 ```bash
 # Masuk ke psql
@@ -40,25 +39,26 @@ cd ..
 ### 4. Setup Frontend (UI)
 
 ```bash
+# Masuk folder ui
 cd ui
+
+# Install dependecies
 npm install
+
+# Kembali ke root
 cd ..
 ```
 
 ---
 
-## ▶️ Menjalankan Aplikasi
-
-### Frontend (Development Mode)
+## How to Run
 
 ```bash
+# Masuk folder ui
 cd ui
 
 # Menggunakan npm
 npm run dev
-
-# ATAU menggunakan pnpm
-pnpm dev
 ```
 
 Frontend akan berjalan di **http://localhost:3000**
