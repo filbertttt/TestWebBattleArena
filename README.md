@@ -47,7 +47,7 @@ npm install
 cd ..
 ```
 
-### 4. Setup Frontend (UI)
+### 5. Setup Frontend (UI)
 
 ```bash
 # Masuk folder ui
